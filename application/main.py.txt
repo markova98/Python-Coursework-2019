@@ -1,0 +1,26 @@
+from computer import *
+from pricelist import *
+
+c1 = Computer("Processor")
+c1.print_computer()
+
+p1 = Pricelist("Intel core i5", 578, 429)
+p1.print_pricelist()
+p1.razlika()
+p1.namalenie()
+
+c2 = Computer("Dunna platka")
+c2.print_computer()
+
+p2 = Pricelist("GIGABYTE Z390 UD", 271, 124)
+p2.print_pricelist()
+p2.razlika()
+p2.namalenie()
+
+c3 = Computer("Pamet")
+c3.print_computer()
+
+p3 = Pricelist("4GB DDR4 2400 ADATA", 60, 38)
+p3.print_pricelist()
+p3.razlika()
+p3.namalenie()

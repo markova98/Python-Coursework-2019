@@ -1,0 +1,50 @@
+class Computer:
+  def __init__(self, computer):
+    self.computer = computer
+    
+  def print_computer(self):
+    print(self.computer)
+
+
+class Pricelist:
+  def __init__(self,name,edro,drebno):
+    self.name = name
+    self.edro = edro
+    self.drebno = drebno
+
+  def print_pricelist(self):
+    print(self.name,"- cena na edro:",self.edro,",cena na drebno:",self.drebno)
+
+  def razlika(self):
+    print("Razlika mejdu cena na EDRO i cena na DREBNO:",self.edro-self.drebno)
+
+  def namalenie(self):
+    print("Namalenie cena na edro s 10%: ",self.edro-(self.edro*0.1),"\nNamalenie cena na drebno s 10%: ",self.drebno-(self.drebno*0.1))
+
+
+from computer import *
+from pricelist import *
+
+c1 = Computer("Processor")
+c1.print_computer()
+
+p1 = Pricelist("Intel core i5", 578, 429)
+p1.print_pricelist()
+p1.razlika()
+p1.namalenie()
+
+c2 = Computer("Dunna platka")
+c2.print_computer()
+
+p2 = Pricelist("GIGABYTE Z390 UD", 271, 124)
+p2.print_pricelist()
+p2.razlika()
+p2.namalenie()
+
+c3 = Computer("Pamet")
+c3.print_computer()
+
+p3 = Pricelist("4GB DDR4 2400 ADATA", 60, 38)
+p3.print_pricelist()
+p3.razlika()
+p3.namalenie()

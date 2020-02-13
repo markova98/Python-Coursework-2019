@@ -1,0 +1,14 @@
+class Pricelist:
+  def __init__(self,name,edro,drebno):
+    self.name = name
+    self.edro = edro
+    self.drebno = drebno
+
+  def print_pricelist(self):
+    print(self.name,"- cena na edro:",self.edro,",cena na drebno:",self.drebno)
+
+  def razlika(self):
+    print("Razlika mejdu cena na EDRO i cena na DREBNO:",self.edro-self.drebno)
+
+  def namalenie(self):
+    print("Namalenie cena na edro s 10%: ",self.edro-(self.edro*0.1),"\nNamalenie cena na drebno s 10%: ",self.drebno-(self.drebno*0.1))
